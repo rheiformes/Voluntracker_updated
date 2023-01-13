@@ -43,23 +43,32 @@ class ViewController: UIViewController {
     /*LOG IN*/
     
     @IBAction func loginPressed(_ sender: Any) {
-        performSegue(withIdentifier: "verified", sender: sender)
+        performSegue(withIdentifier: "login", sender: sender)
         setStartingVals()
     }
+
+    func verifyLogin() {
+        
+    }
     
+    func addNewAccount() {
+        
+    }
     
     @IBAction func signUpPressed(_ sender: Any) {
-        performSegue(withIdentifier: "newAccount", sender: sender)
+        performSegue(withIdentifier: "login", sender: sender)
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let sender = sender as? UIButton else {return}
 
         if sender == self.loginBtn {
-            segue.destination.navigationItem.title = "Welcome back, " + self.usInput.text!
+            segue.destination.navigationItem.title = "Welcome back, " + (self.usInput.text ?? "user")
         }
-        else {
-            segue.destination.navigationItem.title = "Hi," + self.usInput.text!
+        else if sender == self.signUpBtn {
+            segue.destination.navigationItem.title = "Hi, " + (self.usInput.text ?? "user")!
         }
 
     }
@@ -67,11 +76,12 @@ class ViewController: UIViewController {
     
     
     /* ENTERING HOURS */
-    func setStartingVals() {
-        self.currentHrsLbl.text = String(format: "%.2f", self.storedHours)
-        self.hoursBar.progress = Float(self.storedHours / Double(self.goalHours))
-    }
     
+    
+    func setStartingVals() {
+        self.currentHrsLbl?.text = String(format: "%.2f", self.storedHours)
+        self.hoursBar?.progress = Float(self.storedHours / Double(self.goalHours))
+    }
     
     @IBAction func logActivityPressed(_ sender: Any) {
         updateHours()
