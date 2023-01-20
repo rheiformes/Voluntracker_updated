@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226DE6022978677A003AAF35 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DE6012978677A003AAF35 /* Account.swift */; };
 		22FEE824294CDC0C00E78A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FEE823294CDC0C00E78A40 /* AppDelegate.swift */; };
 		22FEE826294CDC0C00E78A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FEE825294CDC0C00E78A40 /* SceneDelegate.swift */; };
 		22FEE828294CDC0C00E78A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FEE827294CDC0C00E78A40 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226DE6012978677A003AAF35 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		22FEE820294CDC0C00E78A40 /* IP11_Voluntracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IP11_Voluntracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FEE823294CDC0C00E78A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FEE825294CDC0C00E78A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				22FEE82C294CDC0D00E78A40 /* Assets.xcassets */,
 				22FEE82E294CDC0D00E78A40 /* LaunchScreen.storyboard */,
 				22FEE831294CDC0D00E78A40 /* Info.plist */,
+				226DE6012978677A003AAF35 /* Account.swift */,
 			);
 			path = IP11_Voluntracker;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FEE828294CDC0C00E78A40 /* ViewController.swift in Sources */,
+				226DE6022978677A003AAF35 /* Account.swift in Sources */,
 				22FEE824294CDC0C00E78A40 /* AppDelegate.swift in Sources */,
 				22FEE826294CDC0C00E78A40 /* SceneDelegate.swift in Sources */,
 			);
