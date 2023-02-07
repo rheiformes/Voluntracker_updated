@@ -16,42 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-rB-Qdt">
-                                <rect key="frame" x="52" y="314" width="288" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7n-FL-kR0">
-                                <rect key="frame" x="52" y="365" width="288" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ3-sg-Ij2">
-                                <rect key="frame" x="52" y="463" width="288" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="login..."/>
-                                <connections>
-                                    <action selector="loginPressed:" destination="QmR-Es-cdk" eventType="touchUpInside" id="gDs-Az-l2w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L58-Ud-0z4">
-                                <rect key="frame" x="52" y="506" width="288" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="sign up..."/>
-                                <connections>
-                                    <action selector="signUpPressed:" destination="QmR-Es-cdk" eventType="touchUpInside" id="2fm-Tm-JwY"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-Sw-Prv">
+                                <rect key="frame" x="57" y="324" width="300" height="248"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-rB-Qdt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7n-FL-kR0">
+                                        <rect key="frame" x="0.0" y="55" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="set your goal hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6M-t9-Ibd">
+                                        <rect key="frame" x="0.0" y="110" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ3-sg-Ij2">
+                                        <rect key="frame" x="0.0" y="165" width="300" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="login..."/>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="QmR-Es-cdk" eventType="touchUpInside" id="gDs-Az-l2w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L58-Ud-0z4">
+                                        <rect key="frame" x="0.0" y="217" width="300" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="sign up..."/>
+                                        <connections>
+                                            <action selector="signUpPressed:" destination="QmR-Es-cdk" eventType="touchUpInside" id="2fm-Tm-JwY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="q0k-RF-MNa"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iZY-NG-TJt"/>
                         <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="Qbf-Sw-Prv" firstAttribute="centerY" secondItem="CYf-ID-q89" secondAttribute="centerY" id="DEd-3A-e6z"/>
+                            <constraint firstItem="Qbf-Sw-Prv" firstAttribute="centerX" secondItem="CYf-ID-q89" secondAttribute="centerX" id="FQ8-BX-Ea9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="VolunTracker" largeTitleDisplayMode="always" id="PSL-Mr-BuI"/>
                     <connections>
+                        <outlet property="goalInput" destination="M6M-t9-Ibd" id="4T0-b4-fNQ"/>
                         <outlet property="loginBtn" destination="UQ3-sg-Ij2" id="8im-4s-Whn"/>
                         <outlet property="pwInput" destination="B7n-FL-kR0" id="lfa-GU-5nI"/>
                         <outlet property="signUpBtn" destination="L58-Ud-0z4" id="hUm-TR-UBs"/>
@@ -61,12 +75,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ChK-lp-xLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="-704"/>
+            <point key="canvasLocation" x="824.63768115942037" y="-704.46428571428567"/>
         </scene>
-        <!--ViewController-->
+        <!--ViewController2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ViewController" wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="IP11_Voluntracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController2" wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController2" customModule="IP11_Voluntracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +126,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UtA-zu-gIA">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="UtA-zu-gIA">
                                         <rect key="frame" x="0.0" y="56.5" width="229" height="4"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="229" id="Exw-9A-fBY"/>
@@ -143,8 +157,9 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="tHI-mz-Nmc"/>
                     <connections>
                         <outlet property="currentHrsLbl" destination="nag-Zs-Ihp" id="PIb-LI-ezA"/>
-                        <outlet property="eventTime" destination="Jty-fS-5xR" id="KyQ-uZ-AgB"/>
+                        <outlet property="eventTime" destination="Jty-fS-5xR" id="a8O-XB-VBT"/>
                         <outlet property="eventTitle" destination="o44-Sf-VSV" id="472-ac-ycf"/>
+                        <outlet property="goalHoursConstantLbl" destination="5du-ip-YRN" id="yzP-eI-Ya3"/>
                         <outlet property="hoursBar" destination="UtA-zu-gIA" id="zBr-Zz-MbR"/>
                         <outlet property="logActivityBtn" destination="Awg-MJ-610" id="Obf-oH-J6l"/>
                     </connections>
